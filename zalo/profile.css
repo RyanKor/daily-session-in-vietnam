@@ -1,0 +1,210 @@
+html,
+body {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+/* container에서 사용자 눈에 보이는 화면 비율을 설정하고 (view width, view height) */
+.container {
+  width: 50vw;
+  height: 100vh;
+  margin: auto;
+  position: relative;
+  border: 1px solid ghostwhite;
+}
+/* 그 내부의 css 박스 모델들 값을 퍼센트로 지정하면, vw&vh에서 지정된 화면 비율 내에서 %를 지정할 수 있다. */
+.image-box {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  background: url("https://images.hdqwalls.com/wallpapers/3d-cube-background-4k-yo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-box i {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.arrow {
+  margin-left: 1rem;
+}
+.dot {
+  margin-right: 1rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  margin-top: 4rem;
+}
+/* image태그를 사용할 때와 background-image를 사용할 때의 가장 큰 차이는? */
+/* image 태그를 사용하면 기존 이미지의 사이즈가 웹 페이지에서 반영되어 렌더링 되기 때문에 별도의 width, height를 지정 안해줘도 렌더링 가능 */
+/* 그러나 background-image라는 속성은 반드시 width, height를 지정해줘야하는데, 그 이유는 box model내의 배경 이미지 설정은
+ 배경 색 설정과 같아 초기에 폭과 높이를 설정 안하면 0으로 기본 크기가 설정되어 있기 때문이다. 그래서 내부에 content가 없으면 출력이 되지 않음
+
+*/
+.post {
+  width: 100%;
+  height: 40%;
+  background-color: rgb(255, 250, 250);
+}
+
+/* object tag 사용관련 내용 정리
+참고 자료 : https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
+object-fit 속성
+object-fit 속성은 대체되는 요소의 내용(<img>, <video>, <object>, <svg> 등과 같은)이 지정된 너비와 높이에 맞게 장착되는 방식을 지정한다.
+
+이는 프로필 이미지나 고정된 크기의 썸네일을 출력하는 다양한 경우처럼 제각각의 크기를 가진 오브젝트등을 넘겨받아 비율을 유지한 채로 일정한 크기로 재가공하는 경우에 유용하다고 할 수 있다. CSS3의 background-size 속성과 매우 유사하다.
+*/
+
+/* 
+position 을 relative 로 지정하면 해당 요소가 기본적으로 표시된 위치를 기준으로 새로운 위치를 지정 할 수 있습니다. 
+이 말을 다른 말로 하면 position 을 relative 로 지정하더라도 top 이나 left 등으로 새로운 위치를 지정하지 않는 이상 기본적으로 표시된 위치와 다르지 않음을 이야기 하는 것입니다.
+*/
+.profile {
+  width: 15%;
+  height: 15%;
+  object-fit: cover;
+  position: absolute;
+  border-radius: 50%;
+  top: 30%;
+  left: 42%;
+  border: white solid 4px;
+}
+
+/* 유저 프로필 아래 타임라인 구분하기 */
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.content,
+.pic {
+  display: flex;
+  text-align: center;
+}
+.content div,
+.pic div {
+  margin-left: 0.5rem;
+}
+
+.content {
+  border-bottom: 2px solid black;
+}
+
+.user {
+  font-size: 2rem;
+}
+
+.bio {
+  font-size: 1.5rem;
+}
+
+.bio a {
+  display: flex;
+  text-decoration: none;
+  color: skyblue;
+}
+.bio a:hover {
+  color: rgb(233, 129, 129);
+}
+
+/* input 입력값 CSS 적용하기! */
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  padding-top: 2rem;
+}
+
+form div {
+  width: 80%;
+  height: 4vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+}
+
+form input {
+  width: 80%;
+  height: 80%;
+  border: none;
+  font-size: 1.2rem;
+  color: lightgray;
+}
+
+form .fas {
+  background-color: white;
+  width: 10%;
+  height: 80%;
+  font-size: 2rem;
+  border-left: 1px solid lightgrey;
+  color: greenyellow;
+}
+
+/* 생성한 게시글 CSS 적용하기 */
+.date {
+  margin: 2rem 0 0 12rem;
+  background-color: rgb(219, 218, 218);
+  width: 10%;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.posting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+  height: 80%;
+  margin: auto;
+  background-color: white;
+  margin-top: 1rem;
+}
+.posting .friends {
+  font-size: 1rem;
+  margin-left: 2rem;
+}
+.posting p {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+.photos {
+  display: flex;
+  justify-content: center;
+}
+.photos img {
+  width: 10vw;
+  height: 100%;
+  margin-left: 0.5rem;
+}
+
+.bottoms {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 1rem 0 1rem;
+}
+.reaction {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+.friends {
+  color: rgb(219, 218, 218);
+}

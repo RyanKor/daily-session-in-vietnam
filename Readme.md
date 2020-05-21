@@ -13,13 +13,13 @@
 > [Learn How To Build a Website in an hour!](https://youtu.be/RZ-Oe4_Ew7g)
 
 첫번째 페이지
-![Spotify](.spotify/index.png)
+![Spotify](./spotify/index.png)
 
 2번째 페이지
-![Spotify](.spotify/discover.png)
+![Spotify](./spotify/discover.png)
 
 3번째 페이지
-![Spotify](.spotify/join.png)
+![Spotify](./spotify/join.png)
 
 ## 6월 11일 - 6월 20일 베트남인 대상 두번째 세션 (유료, 총 4회, 한-베 동시 통역, 오프라인)
 
@@ -27,4 +27,4 @@
 - 실제 비용을 지불하고 수강하는 베트남인 인구에 대한 데이터 확보 목적
 - 이 세션이 수요 조사 이후, 사업 방향성을 결정하는 분수령이 될 것이다.
 
-![Profile](.zalo/profile.png)
+![Profile](./zalo/profile.png)

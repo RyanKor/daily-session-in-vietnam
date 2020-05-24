@@ -1,0 +1,243 @@
+html,
+body {
+  margin: 0;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+/* 가장 왼쪽 사이드바 제작하기 */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 5vw;
+  height: 100vh;
+  background: linear-gradient(#97d0ff, #0044ff);
+}
+.upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60%;
+}
+.upper img {
+  width: 50%;
+  height: 10%;
+  border-radius: 60%;
+  border: 2px solid white;
+  margin-top: 1rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 3rem;
+  align-items: center;
+}
+.menu i,
+.settings i {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2.5rem;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* 사용자와 채팅하는 목록 2번째 박스 */
+
+.user-list {
+  width: 25vw;
+  height: 100vh;
+  border: 0.5px solid lightgrey;
+}
+
+/* 채팅창 만들기 3번째 박스 */
+.chatting {
+  width: 70vw;
+  height: 100vh;
+  border-top: 0.5px solid lightgrey;
+  border-right: 0.5px solid lightgrey;
+  border-bottom: 0.5px solid lightgrey;
+}
+/* input 값에 fontawesome 아이콘 삽입하기 */
+input[type="text"] {
+  font-family: FontAwesome;
+  background-color: rgb(233, 231, 231);
+  border-radius: 30px;
+  box-shadow: none;
+}
+.intro p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.add {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.add input {
+  width: 80%;
+  height: 2.5vh;
+  font-size: 1rem;
+}
+.add i {
+  font-size: 1.5rem;
+  color: lightgrey;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(228, 228, 228);
+  padding: 0 1rem 0 1rem;
+}
+
+/* user-list 두번째 파트 */
+.contact {
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+.expression {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: rgb(195, 195, 195);
+}
+.expression i {
+  margin-left: 1rem;
+  color: lightgrey;
+}
+.expression div {
+  margin-left: 1rem;
+}
+
+.plus,
+.more {
+  display: flex;
+  align-items: center;
+
+  font-size: 1.2rem;
+}
+.plus {
+  margin-top: 2rem;
+}
+
+.more {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.plus img,
+.more img {
+  width: 17%;
+  height: 17%;
+  margin-left: 1rem;
+}
+
+.plus div,
+.more div,
+.img-box div {
+  margin-left: 1rem;
+}
+/* 3번째 요소 추가하기 */
+.load {
+  display: grid;
+
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+.comment {
+  color: rgb(195, 195, 195);
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+.load img {
+  width: 17%;
+  height: 17%;
+  margin-left: 1rem;
+}
+.img-box {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.friend-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(195, 195, 195);
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+.friend-list i {
+  margin-right: 1rem;
+}
+.img-box img {
+  width: 17%;
+  height: 17%;
+  margin-left: 1rem;
+  border-radius: 60%;
+}
+
+/* 마지막 채팅창 구현하기 */
+.chatting {
+  display: flex;
+  flex-direction: column;
+}
+.chatting-top {
+  margin-top: 1rem;
+  height: 9.1vh;
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+.chatting-top img {
+  margin-left: 1rem;
+  width: 10%;
+  height: 100%;
+}
+.chatting-top div {
+  margin-left: 1rem;
+
+  font-size: 2rem;
+}
+.chatting-box {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.chatting-box i {
+  font-size: 8rem;
+  color: rgb(203, 235, 248);
+}
+.text {
+  color: rgb(160, 160, 160);
+  margin-top: 1.5rem;
+}
+button {
+  background-color: none;
+  border: 1px solid rgb(39, 182, 238);
+  font-size: 1rem;
+  color: rgb(39, 182, 238);
+  margin-top: 1.5rem;
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+  border-radius: 5px;
+}

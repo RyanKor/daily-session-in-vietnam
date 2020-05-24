@@ -27,4 +27,14 @@
 - 실제 비용을 지불하고 수강하는 베트남인 인구에 대한 데이터 확보 목적
 - 이 세션이 수요 조사 이후, 사업 방향성을 결정하는 분수령이 될 것이다.
 
-![Profile](./zalo/profile.png)
+1. Zalo 프로필 만들어보기
+   ![Profile](./zalo/profile.png)
+
+2. Zalo 채팅창 구현해보기
+   ![Chatting](./zalo/chatting.png)
+
+- 별도의 참고한 자료는 없고, 실제 Zalo의 프로필 및 채팅창을 보면서 구현한 형태다. 다만, 동일한 형태의 아이콘을 구하지 못했을 때는 최대한 비슷한 형태의 아이콘을 찾아 적용했다.
+
+> Reference
+> Fontawesome
+> Zalo

@@ -26,6 +26,8 @@
 - Zalo 클론 코딩을 통한 코딩 교육 수요 조사
 - 실제 비용을 지불하고 수강하는 베트남인 인구에 대한 데이터 확보 목적
 - 이 세션이 수요 조사 이후, 사업 방향성을 결정하는 분수령이 될 것이다.
+- 모집페이지를 구글 sites.google.com으로 빠르게 빌드
+- [Click Link](https://sites.google.com/likelion.net/zalo/home?authuser=2)
 
 1. Zalo 프로필 만들어보기
    ![Profile](./zalo/profile.png)
